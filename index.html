@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uniswap Clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navBar">
+                <img class="logo" src="./images/logo.png" alt="logo">
+                <div class="centerNav">
+                    <form action="#">
+                        <button type="button" class="centerNavItems" onClick='setAction("Swap")'>Swap</button>
+                        <button type="button" class="centerNavItems" onClick='setAction("Pool")'>Pool</button>
+                        <button type="button" class="centerNavItems" onClick='setAction("Vote")'>Vote</button>
+                        <button type="button" class="centerNavItems" onClick='setAction("Charts")'>Charts</button>
+                    </form>
+                </div>
+                <div class="rightNav">
+                    <button type="button" class="rightNavItems" href="#">Ethereum</button>
+                    <button type="button" class="rightNavItems" href="#">connect wallet</button>
+                    <button type="button" class="rightNavItems" href="#">about</button>
+                    <div class="rightNavDropDown">
+                        <div class="rightNavDropDownItems">Ethereum</div>
+                        <div class="rightNavDropDownItems">Polygon</div>
+                        <div class="rightNavDropDownItems">Optimism</div>
+                        <div class="rightNavDropDownItems">Arbitrum</div>
+                        <div class="rightNavDropDownItems">Celo</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="mainControl">
+            <article class="titleAndGear">
+                <span class="title">Swap</span>
+                <img src="./images/gear.png" class="gear"></img>
+            </article>
+            <article>
+                <form action="#">
+                    <input placeholder="0.0" min="0.001" type="text" inputmode="numeric"><button>Eth</button>
+                </form>
+            </article>
+            <article>
+                <form action="#">
+                    <input placeholder="0.0" min="0.001" type="text" inputmode="numeric"><button>Eth</button>
+                </form>
+            </article>
+            <article>
+                <button class="interactButton">Connect Wallet</button>
+            </article>
+        </section>
+        <footer>copy right kuldeep</footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
