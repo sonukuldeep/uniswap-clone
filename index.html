@@ -12,27 +12,47 @@
 <body>
     <div class="container">
         <header>
-            <nav class="navBar">
-                <img class="logo" src="./images/logo.png" alt="logo">
-                <div class="centerNav">
-                    <form action="#">
-                        <button type="button" class="centerNavItems" onClick='setAction("Swap")'>Swap</button>
-                        <button type="button" class="centerNavItems" onClick='setAction("Pool")'>Pool</button>
-                        <button type="button" class="centerNavItems" onClick='setAction("Vote")'>Vote</button>
-                        <button type="button" class="centerNavItems" onClick='setAction("Charts")'>Charts</button>
-                    </form>
-                </div>
-                <div class="rightNav">
-                    <button type="button" class="rightNavItems" href="#">Ethereum</button>
-                    <button type="button" class="rightNavItems" href="#">connect wallet</button>
-                    <button type="button" class="rightNavItems" href="#">about</button>
-                    <div class="rightNavDropDown">
-                        <div class="rightNavDropDownItems">Ethereum</div>
-                        <div class="rightNavDropDownItems">Polygon</div>
-                        <div class="rightNavDropDownItems">Optimism</div>
-                        <div class="rightNavDropDownItems">Arbitrum</div>
-                        <div class="rightNavDropDownItems">Celo</div>
-                    </div>
+            <nav class="navbar">
+                <div class="lvl1">
+                    <ul>
+                        <li>Logo</li>
+                        <li>
+                            <div class="lvl2">
+                                <ul>
+                                    <li>Swap</li>
+                                    <li>Pool</li>
+                                    <li>Vote</li>
+                                    <li>Charts</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lvl3">
+                                <ul>
+                                    <li>Ethereum
+                                        <div class="lvl4">
+                                            <ul>
+                                                <li>Polygon</li>
+                                                <li>Arbitrum</li>
+                                                <li>Optimum</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Connect wallet</li>
+                                    <li>...
+                                        <div class="lvl5">
+                                            <ul>
+                                                <li>About</li>
+                                                <li>Feature request</li>
+                                                <li>Discord</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
             </nav>
         </header>

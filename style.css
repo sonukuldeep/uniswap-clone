@@ -1,209 +1,63 @@
+:root {
+    --color-bg-primary: #2e222e;
+    --color-bg-secondary: #212429;
+} 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
-    background-image: radial-gradient(circle at top center, #2e222e 10%, #212429 90%);
+    background-image: radial-gradient(circle at top center, var(--color-bg-primary)  10%, var(--color-bg-secondary) 90%);
     background-repeat: no-repeat;
 }
 
 .container {
-
-    width: 95%;
-    margin-inline: auto;
+    outline: 2px solid red;
+    padding: 0 3%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    
 }
 
-.navBar {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    /* outline: 2px solid red; */
-    height: auto;
-}
-
-
-.logo {
-    width: 50px;
-}
-
-.logo:hover{
-    transform: rotate(-3deg);
-    cursor: pointer;
-}
-
-
-.mainControl {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-    background-color: #191b1f;
-    color: white;
-    gap: 5px;
-    border-radius: 20px;
-    width: 450px;
-    align-self: center;
-}
-
-article > form {
-    background-color: #212429;
-    height: 100px; 
-    width: 400px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-article > form > input {
-    background: #212429;
-    border: none;
-    margin: auto 14px;
-    font-size: x-large;
-    color: #f4f4f4;
-    
-}
-
-article > form > input:focus {
-    outline: none;
-}
-
-article > form > button {
-    background: #212429;
-    border: 2px solid teal;
-    height: 40px;
-    min-width: 100px;
-    padding: 0 10px;
-    border-radius: 15px;
-    margin-right: 20px;
-    color: #f4f4f4;
-    box-shadow: 0 5px 10px 2px red;
-    cursor: pointer;
-}
-
-article > form > button:hover {
-    box-shadow: 0 5px 10px 2px rgba(255, 0, 0, 0.384);
-}
-
-footer {
-    display: flex;
-    color: #f4f4f4;
-    justify-content: center;
-    margin-top: 38vh;
-}
-
-.interactButton {
-    width: 400px;
-    height: 50px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: #172a42;
-    color: rgb(64, 64, 146);
-    font-size: large;
-    border: none;
-    cursor: pointer;
-}
-
-.interactButton:hover {
-    background-color: #122134;
-}
-
-.gear {
-    width: 30px;
-}
-.gear:hover {
-    opacity: 0.8;
-}
-
-.titleAndGear {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-}
-
-.title {
-    font-size: large;
-}
-
-.centerNav {
-    background-color: #191b1f;
-    border-radius: 12px;
-    width: auto;
-    height: 35px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    transform: translate(50%,0);
-}
-
-.rightNav {
-    margin-top: 10px;
+.navbar {
     /* outline: 2px solid red; */
 }
 
-.rightNavDropDownEnable {
-    background-color: #191b1f;
-    /* width: 50%; */
-    height: 160px;
-    color: white;
-    /* margin-top: 10px; */
-    position: fixed;
-    display: static;
-    transform: translate(0,10px);
-    border-radius: 12px;
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 
-.rightNavDropDown {
+.lvl4 {
+    position: relative;
+    /* color: red; */
+}
+
+.lvl4 ul {
     display: none;
 }
 
-.rightNavDropDownItems {
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 40px;
+.lvl3 ul > li:hover .lvl4 ul {
+    position: absolute;
+    display: block;
+    /* padding-top: 10px;  */
+     top: 100%;
+    left: 0; 
+    /* outline: 2px solid red; */
+    padding:5px;
 }
 
-/* .rightNavDropDown > div {
+.lvl5 {
+    position: relative;
+}
+.lvl5 ul {
     display: none;
-    /* background-color: red; 
-} */
-
-
-
-.rightNavDropDownItems:nth-of-type(1) {
-    padding-top:0.7em;
 }
 
-.centerNavItems, .rightNavItems{
-    display: inline-block;
-    height: 30px;
-    width: auto;
-    background-color: #30343a;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 0 15px;
-    text-decoration: none;
-}
-
-.centerNavItems, .rightNavItems:hover{
-    cursor: pointer;
-
-}
-
-.centerNavItems:active{
-    cursor: pointer;
-    background-color: #30343a;
-    
+.lvl3 ul li:last-child:hover .lvl5 ul {
+    position: absolute;
+    display: block;
 }
 
