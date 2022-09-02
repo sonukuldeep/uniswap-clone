@@ -326,12 +326,7 @@ footer {
     display:none;
 }
 
-.lvl1 ul > li:hover .lvl1a ul {
-    position: absolute;
-    display: block;
-    left:10px;
-    
-}
+
 
 
 
@@ -345,6 +340,12 @@ footer {
 
     }
     
+    .lvl1 ul > li:hover .lvl1a ul {
+        position: absolute;
+        display: block;
+        left:10px;
+        
+    }
     
 
 
