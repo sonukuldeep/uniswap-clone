@@ -229,10 +229,18 @@ body {
     font-size: 1.8rem;
     margin-left: 8px;
     color: var(--color-white);
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
  }
- 
 
+ section article:last-child {
+    margin-top: 3px;
+ }
+ .efix {
+    margin-top: 4px;
+ }
+.btnfix {
+    height: 70px;
+}
 .selector2bg {
     background-color: var(--color-fg-primary);
     padding: 20px 0;
@@ -336,7 +344,7 @@ footer {
 
 @media(max-width: 800px) {
     .mainControl {
-        outline: 2px solid red;;
+        /* outline: 2px solid red;; */
 
     }
     
