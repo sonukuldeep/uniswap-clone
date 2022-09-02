@@ -15,36 +15,45 @@
             <nav class="navbar">
                 <div class="lvl1">
                     <ul>
-                        <li>Logo</li>
+                        <li><img src="./images/logo.png" alt="">
+                            <div class="lvl1a">
+                                <ul>
+                                    <li><button onClick='setAction("Swap")'>Swap</button></li>
+                                    <li><button onClick='setAction("Pool")'>Pool</button></li>
+                                    <li><button onClick='setAction("Vote")'>Vote</button></li>
+                                    <li><button onClick='setAction("Charts")'>Charts</button></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li>
                             <div class="lvl2">
                                 <ul>
-                                    <li>Swap</li>
-                                    <li>Pool</li>
-                                    <li>Vote</li>
-                                    <li>Charts</li>
+                                    <li><button onClick='setAction("Swap")'>Swap</button></li>
+                                    <li><button onClick='setAction("Pool")'>Pool</button></li>
+                                    <li><button onClick='setAction("Vote")'>Vote</button></li>
+                                    <li><button onClick='setAction("Charts")'>Charts</button></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
                             <div class="lvl3">
                                 <ul>
-                                    <li>Ethereum
+                                    <li class="ethDropDown"><button>Ethereum</button>
                                         <div class="lvl4">
                                             <ul>
-                                                <li>Polygon</li>
-                                                <li>Arbitrum</li>
-                                                <li>Optimum</li>
+                                                <li><button>Polygon</button></li>
+                                                <li><button>Arbitrum</button></li>
+                                                <li><button>Optimum</button></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li>Connect wallet</li>
-                                    <li>...
+                                    <li class="connect"><button>Connect wallet</button></li>
+                                    <li class="connect2"><button>...</button>
                                         <div class="lvl5">
                                             <ul>
-                                                <li>About</li>
-                                                <li>Feature request</li>
-                                                <li>Discord</li>
+                                                <li><button>About</button></li>
+                                                <li><button>Feature request</button></li>
+                                                <li><button>Discord</button></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -56,23 +65,25 @@
                 </div>
             </nav>
         </header>
-        <section class="mainControl">
-            <article class="titleAndGear">
-                <span class="title">Swap</span>
-                <img src="./images/gear.png" class="gear"></img>
+        <section class="mainControl br25px">
+            <article class="mcw100per">
+                <div class="mainControlCommonSettings titleedit">
+                    <span class="title">Swap</span>
+                    <img src="./images/gear.png" class="gear"></img>
+                </div>
             </article>
-            <article>
-                <form action="#">
+            <article class="mcw100per">
+                <form class="mainControlCommonSettings selector1bg selector1a br25px" action="#">
                     <input placeholder="0.0" min="0.001" type="text" inputmode="numeric"><button>Eth</button>
                 </form>
             </article>
-            <article>
-                <form action="#">
-                    <input placeholder="0.0" min="0.001" type="text" inputmode="numeric"><button>Eth</button>
+            <article class="mcw100per">
+                <form class="mainControlCommonSettings selector2bg selector2a br25px" action="#">
+                    <input placeholder="0.0" min="0.001" type="text" inputmode="numeric"><button>Select token</button>
                 </form>
             </article>
             <article>
-                <button class="interactButton">Connect Wallet</button>
+                <button class="interactButton mcw100per br25px">Connect Wallet</button>
             </article>
         </section>
         <footer>copy right kuldeep</footer>

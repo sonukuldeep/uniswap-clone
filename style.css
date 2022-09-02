@@ -1,6 +1,11 @@
 :root {
     --color-bg-primary: #2e222e;
     --color-bg-secondary: #212429;
+    --color-fg-primary: #212429;
+    --color-fg-secondary: #191b1f;
+    --color-white: #fff;
+    --color-btn-primary: #4e8ce4;
+    --color-btn-secondary: #172941;
 } 
 
 * {
@@ -15,38 +20,124 @@ body {
 }
 
 .container {
-    outline: 2px solid red;
-    padding: 0 3%;
+    width: 95%;
     height: 100vh;
+    margin:0 auto;
 }
 
-.navbar {
-    /* outline: 2px solid red; */
-}
 
 .navbar ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
+}
+
+
+
+.lvl2 ul{
+    background-color: var(--color-bg-secondary);
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%,0);
+    color: var(--color-white)
+
+}
+
+.lvl2 button {
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-fg-secondary);
+    color:var(--color-white);
+}
+
+.ethDropDown > button {
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-fg-secondary);
+    color:var(--color-white);
+    padding: 10px 16px;
+    margin-right: 10px;
+    margin-top: 5px
+}
+
+.lvl2 button:active {
+    background-color: #212429;
+}
+
+.lvl5 {
+    color: var(--color-white);
+
 }
 
 .lvl4 {
     position: relative;
     /* color: red; */
+    padding-top: 5px;
 }
 
 .lvl4 ul {
     display: none;
+    
 }
 
-.lvl3 ul > li:hover .lvl4 ul {
+.lvl3 > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: 2px solid red; */
+}
+
+.ethDropDown:hover .lvl4 ul {
+    background-color: var(--color-fg-secondary);
     position: absolute;
     display: block;
     /* padding-top: 10px;  */
-     top: 100%;
+    top: 100%;
     left: 0; 
     /* outline: 2px solid red; */
-    padding:5px;
+    padding-right: 25px;
+    border-radius: 12px;
+    padding: 5px 10px;
+} 
+
+.lvl4 ul li button {
+    background-color: var(--color-fg-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 5px 12px;
+    margin: 5px 0;
+    border-radius: 12px;
+
+}
+.connect2 button {
+    /* background-color: var(--color-fg-secondary);
+    color: var(--color-white);
+    border: none; */
+    padding: 5px 8px;
+    margin-left: 10px;
+
+}
+
+.connect button {
+    background-color: var(--color-fg-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+
+.lvl4 ul li button:active {
+    background-color: #212429;
+
 }
 
 .lvl5 {
@@ -58,6 +149,221 @@ body {
 
 .lvl3 ul li:last-child:hover .lvl5 ul {
     position: absolute;
-    display: block;
+    /* display: block; */
+    left: -100%;
+   /* background-color: var(--color-bg-primary); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
+/* .lvl5 ul li {
+    transform: translate(-100%,0);
+    
+} */
+
+/* starting main content from here */
+
+.mainControl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 2px solid green; */
+    background-color: var(--color-fg-secondary);
+    /* padding-top: 90px;
+    padding-bottom: 100px; */
+    /* margin: 0 34%; */
+    max-width:500px;
+    margin-top: 66px;
+    margin: 0 auto;
+    /* border-radius: 25px; */
+    height: 320px;
+    min-width: 320px;
+}
+
+.title{
+    padding-left: 8px;
+
+    font-size: 1.2rem;
+}
+
+.titleedit{
+    padding: 5px 0;
+}
+
+.titleedit img {
+    width: 35px;
+}
+
+.br25px{
+    border-radius: 25px;
+}
+
+.mcw100per{
+    width: 95%;
+    /* outline: 2px solid red; */
+}
+
+.mainControlCommonSettings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%;  */
+    /* outline: 2px solid red; */
+}
+
+.mainControlCommonSettings > span {
+    color: var(--color-white);
+}
+
+.selector1bg{
+    background-color: var(--color-fg-primary);
+    margin:3px;
+    padding: 30px 0;
+
+}
+ .selector1bg input, .selector2bg input {
+    background-color: var(--color-fg-primary);
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    margin-left: 8px;
+    color: var(--color-white);
+    outline: 2px solid red;
+ }
+ 
+
+.selector2bg {
+    background-color: var(--color-fg-primary);
+    padding: 20px 0;
+    margin: 3px;
+}
+
+article:last-child{
+    width: 100%;
+    /* outline: 2px solid red; */
+    /* display: block; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.selector1a button {
+    margin-right: 20px;
+    padding: 10px 40px;
+    border-radius: 25px;
+    /* font-size: larger; */
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: #2c2f36;
+    border: none;
+}
+
+.selector1a button:hover {
+    background-color: #3d3f45;
+}
+
+.selector1a button:active {
+    background-color: #2c2e33;
+}
+
+.selector2a button:hover {
+}
+
+.selector2a button:active {
+    background-color: #2c2e33;
+}
+
+.selector2a button {
+    background-color: #2172e5;
+    margin-right: 20px;
+    padding: 10px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: var(--color-white);
+    /* background-color: #2c2f36; */
+    border: none;
+}
+
+.interactButton {
+    /* height: 40px; */
+    /* width: 98%; */
+    /* margin:5px; */
+    /* margin-bottom: 15px; */
+    /* display: block; */
+    margin-top: 4px;
+    padding: 18px 0;
+    border: none;
+    /* outline: 2px solid red; */
+    color: var(--color-btn-primary);
+    background-color: var(--color-btn-secondary);   
+}
+
+.interactButton:hover {
+    background-color: #122338;   
+
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,75%);
+    color: var(--color-white)
+}
+
+.lvl1 img:hover {
+    transform: rotate(-2deg);
+}
+
+.lvl1a {
+    position: relative;
+    /* outline:2px solid red; */
+}
+
+.lvl1a ul {
+    display:none;
+}
+
+.lvl1 ul > li:hover .lvl1a ul {
+    position: absolute;
+    display: block;
+    left:10px;
+    
+}
+
+
+
+
+
+
+
+@media(max-width: 800px) {
+    .mainControl {
+        outline: 2px solid red;;
+
+    }
+    
+    
+
+
+    .lvl2{
+        display: none;
+    }
+    .selector1bg input, .selector2bg input{
+        /* width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between; */
+        /* transform: scale(0.5); */
+        max-width: 150px;
+        
+    }
+    .mainContro{
+        height:auto;
+    }
+
+
+}
